@@ -12,6 +12,14 @@ Debug Thugs
 * [Devang Delvadiya](https://github.com/DevangDelvadiya)
 * [Manthan Ghasadiya](https://github.com/manthanghasadiya)
 
+## Database used
+
+<p align="center">
+  <img src='docs/media/cockroach_db.png?raw=true' width='40%'>
+</p>
+
+---
+
 ## Problem Statement
 
 * No system exists where you can listen to songs as well as upload your own creation publicly and privately.
