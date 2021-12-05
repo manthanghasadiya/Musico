@@ -12,10 +12,11 @@ Debug Thugs
 * [Devang Delvadiya](https://github.com/DevangDelvadiya)
 * [Manthan Ghasadiya](https://github.com/manthanghasadiya)
 
-## Database
+## Database/Verification
 
 <p align="center">
   <a href="https://github.com/cockroachdb/cockroach"><img src='https://raw.githubusercontent.com/cockroachdb/cockroach/master/docs/media/cockroach_db.png' width='20%'></a>
+  <img src="https://twilio-cms-prod.s3.amazonaws.com/images/Twilio_logo_D8D2oky.width-640.png" width="20%">
 </p>
 
 ---
