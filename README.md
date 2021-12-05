@@ -1,5 +1,17 @@
 # Musico
 
+## Website
+[GHS](https://global-healthcare-system.herokuapp.com/)
+
+## Team Name 
+Debug Thugs
+
+## Team Members 
+* [Rushi Javiya ](https://github.com/Rushijaviya) 
+* [Tapan Savani](https://github.com/Stapan17)
+* [Devang Delvadiya](https://github.com/DevangDelvadiya)
+* [Manthan Ghasadiya](https://github.com/manthanghasadiya)
+
 ## Problem Statement
 
 * No system exists where you can listen to songs as well as upload your own creation publicly and privately.
