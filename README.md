@@ -12,10 +12,10 @@ Debug Thugs
 * [Devang Delvadiya](https://github.com/DevangDelvadiya)
 * [Manthan Ghasadiya](https://github.com/manthanghasadiya)
 
-## Database used
+## Database
 
 <p align="center">
-  <img src='https://raw.githubusercontent.com/cockroachdb/cockroach/master/docs/media/cockroach_db.png' width='40%'>
+  <img src='https://raw.githubusercontent.com/cockroachdb/cockroach/master/docs/media/cockroach_db.png' width='30%'>
 </p>
 
 ---
