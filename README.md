@@ -1,7 +1,7 @@
 # Musico
 
 ## Website
-[GHS](https://global-healthcare-system.herokuapp.com/)
+[Musico](https://muzico.herokuapp.com/)
 
 ## Team Name 
 Debug Thugs
