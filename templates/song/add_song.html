@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add Song</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="../static/assets1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets1/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/assets1/css/magnific-popup.css">
+    <link rel="stylesheet" href="../static/assets1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/assets1/css/themify-icons.css">
+    <link rel="stylesheet" href="../static/assets1/css/nice-select.css">
+    <link rel="stylesheet" href="../static/assets1/css/audioplayer.css">
+    <link rel="stylesheet" href="../static/assets1/css/flaticon.css">
+    <link rel="stylesheet" href="../static/assets1/css/gijgo.css">
+    <link rel="stylesheet" href="../static/assets1/css/animate.css">
+    <link rel="stylesheet" href="../static/assets1/css/slick.css">
+    <link rel="stylesheet" href="../static/assets1/css/slicknav.css">
+    <link rel="stylesheet" href="../static/assets1/css/style.css">
+    <link rel="stylesheet" href="../static/search.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+    <!-- <link rel='stylesheet' href='../static/addsong.css'> -->
+    <link rel='stylesheet' href='../../static/login2.css'>
+
+    <style>
+        #id_user {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-2">
+                                <div class="logo">
+                                    <a href="index">
+                                        <img src="../static/assets1/img/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="col-xl-6 col-lg-7">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a class="active" href="index">Home</a></li>
+                                            <li><a class="active" href="{% url 'public_song' %}">Public songs</a></li>
+                                            <li><a class="active" href="{% url 'add_song' %}">Add songs</a></li>
+
+                                            {% if request.user.is_authenticated %}
+                                            <li> <a href="{% url 'my_song' %}">My Songs</a></li>
+                                            {% endif %}
+
+                                            <li><a href="{% url 'about' %}">About</a></li>
+                                            <li><a href="{% url 'track' %}">Tracks</a></li>
+
+                                            {% if request.user.is_authenticated %}
+                                            <li><a href="{% url 'signout' %}">Sign out </a>
+                                            </li>
+                                            {% else %}
+                                            <li><a href="{% url 'loginnew' %}">Login / Sign Up </a>
+                                            </li>
+                                            {% endif %}
+
+
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div> -->
+
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% if request.user.is_authenticated %} {% if chk %}
+    <div style="padding-top: 4em;">
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Add Song</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Details</label>
+
+                <div class="login-form">
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="sign-in-htm">
+
+                            <div class="group">
+
+                                <!-- <div class="input-field"> -->
+
+                                <!-- <p> -->
+                                <select name="user" required id="id_user">
+              <option value="" selected>---------</option>
+            
+              <option value="716419962543374337">Manthan</option>
+              <option value="716415981692551169">mohit</option>
+            
+              <option value="716140495304720385">user</option>
+              <option value="716441461449981953">rushi</option>
+            
+              <option value="716202724541431809">tapan</option>
+            
+              <option value="716205605339267073">dev</option>
+            
+              <option value="716218622960631809">w</option>
+            </select>
+                                <!-- </p> -->
+                                <!-- </div> -->
+                            </div>
+
+                            <div class="group">
+                                <!-- <p> -->
+
+                                <label for="id_audio_name" class="label">Audio name:</label>
+                                <input class="input" type="text" name="audio_name" maxlength="100" required id="id_audio_name">
+                                <!-- </p> -->
+                            </div>
+
+                            <div class="group">
+                                <!-- <p> -->
+
+                                <label for="id_audio_file" class="label">Audio file:</label>
+                                <input class="input" type="file" name="audio_file" required id="id_audio_file">
+                                <!-- </p> -->
+                            </div>
+
+                            <div class="group">
+                                <!-- <p> -->
+
+                                <label for="id_audio_type" class="label">Audio type:</label> <select name="audio_type" required id="id_audio_type">
+            <option value="" selected>---------</option>
+
+            <option value="Public">Public</option>
+
+            <option value="Private">Private</option>
+
+            </select>
+                                <!-- </p> -->
+                            </div>
+
+
+                            <div class="group">
+                                <!-- <p> -->
+                                <label for="id_thumbnail" class="label">Thumbnail:</label> <input class="input" type="file" name="thumbnail" accept="image/*" required id="id_thumbnail">
+                                <!-- </p> -->
+                            </div>
+                            <div class="group">
+                                <!-- <input type="submit" class="button" value="Submit" onclick="fun()"> -->
+                                <input class="button" type="submit" value="Submit" onclick="fun()">
+                            </div>
+                            <!-- <button type="submit" onclick="fun()">submit</button> -->
+
+                    </form>
+                    <div class="hr"></div>
+                    <!-- <div class="foot-lnk">
+                    <a href="#forgot">Forgot Password?</a>
+                </div> -->
+                    <div class="foot-lnk">
+                        <label for="tab-2">See Details</a>
+            </div>
+                </div>
+                <div class="sign-up-htm">
+                    <div class="group" style="padding-top: 2em">
+                            <label for="pass" class="label">Public: </label>
+                        <p>Songs uploaded with this tag will be visible to all the viewers. All the visitors are able to play your songs.</p>
+                    </div>
+
+                    <div class="group" style="padding-top: 2em">
+                        <label for="pass" class="label">Private: </label>
+                        <p>Songs uploaded with this tag will not be visible to anyone accept you. No one except you can play the selected songs.</p>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Add Song</a>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    {% else %}
+
+<center>
+    <div style="color: whitesmoke; padding-top: 15em; padding-bottom: 25em;">
+        Your mobile number is not verified, to add song Verify <a href="{% url 'verify' %}" style="color: red;">here.</a>
+    </div>
+</center>
+    {% endif %} {% else %}
+    <h3>
+        <a href="{% url 'signin' %}"> Please login first!</a>
+    </h3>
+    {% endif %}
+
+
+    <!-- <script>
+        var name="{{ user.mobile_number }}";
+        document.getElementById("noom").placeholder=name;
+
+    </script> -->
+    </div>
+    </div>
+
+    <!-- footer start -->
+    <footer class="footer" style="padding-top: 3em;">
+        <!-- <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Services
+                        </h3>
+                        <div class="subscribe-from">
+                            <form action="#">
+                                <input type="text" placeholder="Enter your mail">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                        <p class="sub_text">Esteem spirit temper too say adieus who direct esteem esteems luckily.</p>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-5 offset-xl-1">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Contact Me
+                        </h3>
+                        <ul>
+                            <li><a href="#">conbusi@support.com
+                                </a></li>
+                            <li><a href="#">+10 873 672 6782
+                                </a></li>
+                            <li><a href="#">600/D, Green road, Kings Garden NewYork-6732</a></li>
+                        </ul>
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class=" fa fa-facebook "></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-7 col-md-6">
+                        <p class="copy_right">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This Website is made with<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">Debug Thugs</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                    <div class="col-xl-5 col-md-6">
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="{% url 'home' %}">home</a></li>
+                                <li><a href="{% url 'about' %}">about</a></li>
+                                <li><a href="{% url 'track' %}">tracks</a></li>
+                                <li><a href="{% url 'contact' %}">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+
+    <script>
+        name1 = {{user.id}};
+    
+        function fun() {
+    
+            a = document.getElementById('id_user');
+    
+            for (var i = 0; i < a.length; i++) {
+                if (a[i].value == name1) {
+                    console.log(a[i].innerHTML);
+                    a[i].selected = 'selected';
+                }
+            }
+    
+        }
+    </script>
+
+
+</body>
+
+
+
+</html>

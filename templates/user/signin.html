@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <title>SignIN</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(../../static/two.jpg) no-repeat;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .headered {
+            color: white;
+            background-color: #ff8d1e;
+            text-shadow: 1px 1px grey;
+            height: 60px;
+            width: 35%;
+            text-align: center;
+            border-radius: 7px;
+            margin: 50px 0;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+
+        button {
+            height: 50px;
+            font-size: 20px;
+            width: 250px;
+            color: white;
+            border-radius: 7px;
+            margin: 10px;
+            padding: 0 15px;
+        }
+
+        .btn {
+            font-size: 20px;
+        }
+
+        .inlogin {
+            margin-top: 10px;
+        }
+
+        .form-control {
+            width: 30%;
+            margin: 25px;
+            padding: 10px;
+            height: 50px;
+            font-size: 25px;
+            border-radius: 7px;
+            border-style: solid;
+            border-width: 2px 2px;
+            border-color: #353230;
+            text-align: center;
+        }
+
+        .txt {
+            font-size: 20px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 class="headered">Login to your account</h1>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="login">
+                <input type="text" required class="form-control" name="username" value="" id="floatingInput"
+                    placeholder="Username" />
+
+                <input type="password" required class="form-control" name="password" value="" id="floatingPassword"
+                    placeholder="Password" />
+
+                <button type="submit" class="btn btn-outline-success" value="">
+                    Login
+                </button>
+            </div>
+        </form>
+
+
+        <a href="{% url 'signup' %}"><button type="submit" class="btn btn-outline-primary" value="">
+                Create account here
+            </button></a>
+        <br />
+    </center>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+
+</html>

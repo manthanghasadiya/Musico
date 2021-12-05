@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add Song</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel='stylesheet' href='static/addsong.css'>
+
+    <style>
+        #id_user {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    {% if request.user.is_authenticated %} {% if chk %}
+    <div class="login-form">
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <h1>Add Song</h1>
+            {{song_form.errors}} {{song_form.as_p}}
+            <div class="content">
+
+                <input type="hidden" name="user" class="form-control" value="" id="elder" />
+                <!-- <p> <select name="user" required id="id_user elder">
+  <option value="" selected>---------</option>
+
+  <option value="716125790292148225">q</option>
+
+  <option value="716140495304720385">user</option>
+
+  <option value="716202724541431809">tapan</option>
+
+  <option value="716205605339267073">dev</option>
+
+  <option value="716218622960631809">w</option>
+
+</select></p> -->
+
+                <div class="input-field">
+                    <label for="id_audio_name">Audio name:</label> <input type="text" name="audio_name" maxlength="100" required="" id="id_audio_name">
+                </div>
+
+                <div class="input-field">
+                    <p><label for="id_audio_file">Audio file:</label> <input type="file" name="audio_file" id="id_audio_file"></p>
+                </div>
+
+                <div class="input-field">
+                    <p><label for="id_audio_type">Audio type:</label> <select name="audio_type" required="" id="id_audio_type">
+                     <option value="" selected="">---------</option>
+      
+                      <option value="Public">Public</option>
+      
+                         <option value="Private">Private</option>
+      
+                         </select></p>
+                </div>
+
+                <div class="input-field">
+                    <p><label for="id_thumbnail">Thumbnail:</label> <input type="file" name="thumbnail" accept="image/*" id="id_thumbnail"></p>
+                </div>
+
+
+            </div>
+
+            <button type="submit">Add Song</button>
+
+
+        </form>
+    </div>
+    {% else %}
+
+
+    <div style="color: red;">
+        Your mobile number is not verified, to add song <a href="{% url 'verify' %}">Verify</a> it.
+    </div>
+
+    {% endif %} {% else %}
+    <h3>
+        <a href="{% url 'signin' %}"> Please login first!</a>
+    </h3>
+    {% endif %}
+
+    <!-- footer start -->
+    <footer class="footer">
+        <!-- <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Services
+                        </h3>
+                        <div class="subscribe-from">
+                            <form action="#">
+                                <input type="text" placeholder="Enter your mail">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                        <p class="sub_text">Esteem spirit temper too say adieus who direct esteem esteems luckily.</p>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-5 offset-xl-1">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Contact Me
+                        </h3>
+                        <ul>
+                            <li><a href="#">conbusi@support.com
+                                </a></li>
+                            <li><a href="#">+10 873 672 6782
+                                </a></li>
+                            <li><a href="#">600/D, Green road, Kings Garden NewYork-6732</a></li>
+                        </ul>
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class=" fa fa-facebook "></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-7 col-md-6">
+                        <p class="copy_right">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This Website is made with<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">Debug Thugs</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                    <div class="col-xl-5 col-md-6">
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="{% url 'home' %}">home</a></li>
+                                <li><a href="{% url 'about' %}">about</a></li>
+                                <li><a href="{% url 'track' %}">tracks</a></li>
+                                <li><a href="{% url 'contact' %}">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+
+    <!-- {% if request.user.is_authenticated %}
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        {% csrf_token %} {{song_form.as_p}} {{song_form.errors}}
+
+        <button type="submit">Submit</button>
+
+    </form>
+    {% else %}
+    <h3>
+        <a href="{% url 'signin' %}"> Please login first!</a>
+    </h3>
+    {% endif %} -->
+
+    <!-- <script>
+        var name1 = {{user.id}};
+
+        document.getElementById("elder").value = name1;
+    </script> -->
+
+
+
+</body>
+
+</html>

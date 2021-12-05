@@ -1,0 +1,8 @@
+I211205 04:43:10.005878 823 util/log/file_sync_buffer.go:238 ⋮ [config]   file created at: 2021/12/05 04:43:10
+I211205 04:43:10.005927 823 util/log/file_sync_buffer.go:238 ⋮ [config]   running on machine: ‹Mantop›
+I211205 04:43:10.005947 823 util/log/file_sync_buffer.go:238 ⋮ [config]   binary: CockroachDB CCL v21.2.2 (x86_64-w64-mingw32, built 2021/12/01 14:41:47, go1.16.6)
+I211205 04:43:10.005965 823 util/log/file_sync_buffer.go:238 ⋮ [config]   arguments: [‹C:\Program Files\cockroach-v21.2.2.windows-6.2-amd64\cockroach.exe› ‹start-single-node› ‹--insecure› ‹--logtostderr›]
+I211205 04:43:10.005998 823 util/log/file_sync_buffer.go:238 ⋮ [config]   log format (utf8=✓): crdb-v2
+I211205 04:43:10.006013 823 util/log/file_sync_buffer.go:238 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+I211205 04:43:10.001926 823 5@util/log/event_log.go:32 ⋮ [n1,intExec=‹create-default-DB›] 1 ={"Timestamp":1638679389976498900,"EventType":"create_database","Statement":"CREATE DATABASE IF NOT EXISTS ‹defaultdb›","Tag":"CREATE DATABASE","User":"root","DescriptorID":50,"ApplicationName":"$ internal-create-default-DB","DatabaseName":"‹defaultdb›"}
+I211205 04:43:10.075090 826 5@util/log/event_log.go:32 ⋮ [n1,intExec=‹create-default-DB›] 2 ={"Timestamp":1638679390016734600,"EventType":"create_database","Statement":"CREATE DATABASE IF NOT EXISTS ‹postgres›","Tag":"CREATE DATABASE","User":"root","DescriptorID":51,"ApplicationName":"$ internal-create-default-DB","DatabaseName":"‹postgres›"}

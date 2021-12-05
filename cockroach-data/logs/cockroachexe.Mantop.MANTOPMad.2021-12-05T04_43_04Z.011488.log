@@ -1,0 +1,152 @@
+I211205 04:43:04.899259 1 util/log/file_sync_buffer.go:238 ⋮ [config]   file created at: 2021/12/05 04:43:04
+I211205 04:43:04.899512 1 util/log/file_sync_buffer.go:238 ⋮ [config]   running on machine: ‹Mantop›
+I211205 04:43:04.899548 1 util/log/file_sync_buffer.go:238 ⋮ [config]   binary: CockroachDB CCL v21.2.2 (x86_64-w64-mingw32, built 2021/12/01 14:41:47, go1.16.6)
+I211205 04:43:04.899569 1 util/log/file_sync_buffer.go:238 ⋮ [config]   arguments: [‹C:\Program Files\cockroach-v21.2.2.windows-6.2-amd64\cockroach.exe› ‹start-single-node› ‹--insecure› ‹--logtostderr›]
+I211205 04:43:04.899602 1 util/log/file_sync_buffer.go:238 ⋮ [config]   log format (utf8=✓): crdb-v2
+I211205 04:43:04.899615 1 util/log/file_sync_buffer.go:238 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+W211205 04:43:04.772716 1 1@cli/start.go:1105 ⋮ [-] 1  ALL SECURITY CONTROLS HAVE BEEN DISABLED!
+W211205 04:43:04.772716 1 1@cli/start.go:1105 ⋮ [-] 1 +
+W211205 04:43:04.772716 1 1@cli/start.go:1105 ⋮ [-] 1 +This mode is intended for non-production testing only.
+W211205 04:43:04.772716 1 1@cli/start.go:1105 ⋮ [-] 1 +
+W211205 04:43:04.772716 1 1@cli/start.go:1105 ⋮ [-] 1 +In this mode:
+W211205 04:43:04.772716 1 1@cli/start.go:1105 ⋮ [-] 1 +- Your cluster is open to any client that can access ‹any of your IP addresses›.
+W211205 04:43:04.772716 1 1@cli/start.go:1105 ⋮ [-] 1 +- Intruders with access to your machine or network can observe client-server traffic.
+W211205 04:43:04.772716 1 1@cli/start.go:1105 ⋮ [-] 1 +- Intruders can log in without password and read or write any data in the cluster.
+W211205 04:43:04.772716 1 1@cli/start.go:1105 ⋮ [-] 1 +- Intruders can consume all your server's resources and cause unavailability.
+I211205 04:43:05.001856 1 1@cli/start.go:1115 ⋮ [-] 2  To start a secure server without mandating TLS for clients,
+I211205 04:43:05.001856 1 1@cli/start.go:1115 ⋮ [-] 2 +consider --accept-sql-without-tls instead. For other options, see:
+I211205 04:43:05.001856 1 1@cli/start.go:1115 ⋮ [-] 2 +
+I211205 04:43:05.001856 1 1@cli/start.go:1115 ⋮ [-] 2 +- ‹https://go.crdb.dev/issue-v/53404/v21.2›
+I211205 04:43:05.001856 1 1@cli/start.go:1115 ⋮ [-] 2 +- https://www.cockroachlabs.com/docs/v21.2/secure-a-cluster.html
+W211205 04:43:05.005754 1 1@cli/start.go:1031 ⋮ [-] 3  ‹Using the default setting for --cache (128 MiB).›
+W211205 04:43:05.005754 1 1@cli/start.go:1031 ⋮ [-] 3 +‹  A significantly larger value is usually needed for good performance.›
+W211205 04:43:05.005754 1 1@cli/start.go:1031 ⋮ [-] 3 +‹  If you have a dedicated server a reasonable setting is --cache=.25 (2.0 GiB).›
+I211205 04:43:05.007984 1 1@cli/start.go:1144 ⋮ [-] 4  ‹CockroachDB CCL v21.2.2 (x86_64-w64-mingw32, built 2021/12/01 14:41:47, go1.16.6)›
+I211205 04:43:05.048119 1 server/config.go:437 ⋮ [-] 5  system total memory: ‹7.9 GiB›
+I211205 04:43:05.049086 1 server/config.go:439 ⋮ [-] 6  server configuration:
+I211205 04:43:05.049086 1 server/config.go:439 ⋮ [-] 6 +‹max offset             500000000›
+I211205 04:43:05.049086 1 server/config.go:439 ⋮ [-] 6 +‹cache size             128 MiB›
+I211205 04:43:05.049086 1 server/config.go:439 ⋮ [-] 6 +‹SQL memory pool size   2.0 GiB›
+I211205 04:43:05.049086 1 server/config.go:439 ⋮ [-] 6 +‹scan interval          10m0s›
+I211205 04:43:05.049086 1 server/config.go:439 ⋮ [-] 6 +‹scan min idle time     10ms›
+I211205 04:43:05.049086 1 server/config.go:439 ⋮ [-] 6 +‹scan max idle time     1s›
+I211205 04:43:05.049086 1 server/config.go:439 ⋮ [-] 6 +‹event log enabled      true›
+I211205 04:43:05.058172 1 1@cli/start.go:1009 ⋮ [-] 7  using local environment variables:
+I211205 04:43:05.058172 1 1@cli/start.go:1009 ⋮ [-] 7 +LANG=‹en_US.UTF-8›
+I211205 04:43:05.060258 1 1@cli/start.go:1016 ⋮ [-] 8  process identity: ‹uid S-1-5-21-1404119473-3492644253-2646707580-1001, gid S-1-5-21-1404119473-3492644253-2646707580-1001›
+I211205 04:43:06.182996 1 1@cli/start.go:1225 ⋮ [-] 9  GEOS loaded from directory ‹C:\Program Files\cockroach-v21.2.2.windows-6.2-amd64\lib›
+I211205 04:43:06.212199 1 1@cli/start.go:582 ⋮ [-] 10  starting cockroach node
+I211205 04:43:07.536112 49 server/config.go:592 ⋮ [n?] 11  1 storage engine‹› initialized
+I211205 04:43:07.548409 49 server/config.go:595 ⋮ [n?] 12  ‹Pebble cache size: 128 MiB›
+I211205 04:43:07.568181 49 server/config.go:595 ⋮ [n?] 13  ‹store 0: RocksDB, max size 0 B, max open file limit 10000›
+I211205 04:43:08.007034 49 server/tracedumper/tracedumper.go:119 ⋮ [n?] 14  writing job trace dumps to ‹C:\Users\Admin\Downloads\Telegram Desktop\music\cockroach-data\logs\inflight_trace_dump›
+I211205 04:43:08.976476 49 1@server/server.go:986 ⋮ [n?] 15  monitoring forward clock jumps based on server.clock.forward_jump_check_enabled
+I211205 04:43:09.338826 49 server/init.go:197 ⋮ [n?] 16  no stores initialized
+I211205 04:43:09.339705 49 server/init.go:198 ⋮ [n?] 17  awaiting `cockroach init` or join with an already initialized node
+I211205 04:43:09.341291 49 server/init.go:262 ⋮ [n?] 18  cluster ‹0353968e-0f67-4a9c-80b1-2a4cd30efaa1› has been created
+I211205 04:43:09.342673 49 server/init.go:263 ⋮ [n?] 19  allocated node ID: n1 (for self)
+I211205 04:43:09.344193 49 server/init.go:264 ⋮ [n?] 20  active cluster version: 21.2
+W211205 04:43:09.351762 49 1@cli/start.go:984 ⋮ [-] 21  neither --listen-addr nor --advertise-addr was specified.
+W211205 04:43:09.351762 49 1@cli/start.go:984 ⋮ [-] 21 +The server will advertise ‹"Mantop"› to other nodes, is this routable?
+W211205 04:43:09.351762 49 1@cli/start.go:984 ⋮ [-] 21 +
+W211205 04:43:09.351762 49 1@cli/start.go:984 ⋮ [-] 21 +Consider using:
+W211205 04:43:09.351762 49 1@cli/start.go:984 ⋮ [-] 21 +- for local-only servers:  --listen-addr=localhost
+W211205 04:43:09.351762 49 1@cli/start.go:984 ⋮ [-] 21 +- for multi-node clusters: --advertise-addr=<host/IP addr>
+I211205 04:43:09.352047 127 1@server/server.go:1553 ⋮ [n?] 22  connecting to gossip network to verify cluster ID ‹"0353968e-0f67-4a9c-80b1-2a4cd30efaa1"›
+W211205 04:43:09.371934 49 1@gossip/gossip.go:1484 ⋮ [n?] 23  no gossip resolvers found; use --join to specify a connected node
+I211205 04:43:09.373020 49 gossip/gossip.go:402 ⋮ [n1] 24  NodeDescriptor set to ‹node_id:1 address:<network_field:"tcp" address_field:"Mantop:26257" > attrs:<> locality:<> ServerVersion:<major_val:21 minor_val:2 patch:0 internal:0 > build_tag:"v21.2.2" started_at:1638679389372962300 cluster_name:"" sql_address:<network_field:"tcp" address_field:"Mantop:26257" >›
+I211205 04:43:09.416335 49 server/node.go:406 ⋮ [n1] 25  initialized store s1
+I211205 04:43:09.427218 49 kv/kvserver/stores.go:250 ⋮ [n1] 26  read 0 node addresses from persistent storage
+I211205 04:43:09.440629 127 1@server/server.go:1556 ⋮ [n1] 27  node connected via gossip
+I211205 04:43:09.464980 49 server/node.go:483 ⋮ [n1] 28  started with engine type ‹2›
+I211205 04:43:09.469616 49 server/node.go:485 ⋮ [n1] 29  started with attributes []
+I211205 04:43:09.472561 49 server/goroutinedumper/goroutinedumper.go:120 ⋮ [n1] 30  writing goroutine dumps to ‹C:\Users\Admin\Downloads\Telegram Desktop\music\cockroach-data\logs\goroutine_dump›
+I211205 04:43:09.476634 49 server/heapprofiler/heapprofiler.go:49 ⋮ [n1] 31  writing go heap profiles to ‹C:\Users\Admin\Downloads\Telegram Desktop\music\cockroach-data\logs\heap_profiler› at least every 1h0m0s
+I211205 04:43:09.477563 49 server/heapprofiler/cgoprofiler.go:53 ⋮ [n1] 32  to enable jmalloc profiling: "export MALLOC_CONF=prof:true" or "ln -s prof:true /etc/malloc.conf"
+I211205 04:43:09.479038 49 server/heapprofiler/statsprofiler.go:54 ⋮ [n1] 33  writing memory stats to ‹C:\Users\Admin\Downloads\Telegram Desktop\music\cockroach-data\logs\heap_profiler› at last every 1h0m0s
+W211205 04:43:09.480419 49 server/server.go:2558 ⋮ [n1] 34  failed to start query profiler worker: failed to read ‹memory› cgroup from cgroups file: ‹\proc\self\cgroup›: open ‹\proc\self\cgroup›: The system cannot find the path specified.
+I211205 04:43:09.485406 49 1@server/server.go:1681 ⋮ [n1] 35  starting http server at ‹[::]:8080› (use: ‹Mantop:8080›)
+I211205 04:43:09.487383 49 1@server/server.go:1688 ⋮ [n1] 36  starting grpc/postgres server at ‹[::]:26257›
+I211205 04:43:09.488010 49 1@server/server.go:1689 ⋮ [n1] 37  advertising CockroachDB node at ‹Mantop:26257›
+I211205 04:43:09.570938 49 1@util/log/event_log.go:32 ⋮ [n1] 38 ={"Timestamp":1638679389570912300,"EventType":"node_join","NodeID":1,"StartedAt":1638679389372962300,"LastUp":1638679389372962300}
+I211205 04:43:09.574317 49 sql/sqlliveness/slinstance/slinstance.go:296 ⋮ [n1] 39  starting SQL liveness instance
+I211205 04:43:09.587126 235 sql/temporary_schema.go:508 ⋮ [n1] 40  running temporary object cleanup background job
+I211205 04:43:09.587859 238 sql/sqlstats/persistedsqlstats/provider.go:137 ⋮ [n1] 41  starting sql-stats-worker with initial delay: 1h5m42.736745074s
+I211205 04:43:09.592828 235 sql/temporary_schema.go:552 ⋮ [n1] 42  found 0 temporary schemas
+I211205 04:43:09.596652 235 sql/temporary_schema.go:555 ⋮ [n1] 43  early exiting temporary schema cleaner as no temporary schemas were found
+I211205 04:43:09.598830 235 sql/temporary_schema.go:556 ⋮ [n1] 44  completed temporary object cleanup job
+I211205 04:43:09.599349 235 sql/temporary_schema.go:639 ⋮ [n1] 45  temporary object cleaner next scheduled to run at 2021-12-05 05:13:09.5869415 +0000 UTC
+I211205 04:43:09.627047 233 sql/sqlliveness/slstorage/slstorage.go:397 ⋮ [n1] 46  inserted sqlliveness session 2f05c29f9bce4667bb2fd0361c63dd2e
+I211205 04:43:09.638585 233 sql/sqlliveness/slinstance/slinstance.go:183 ⋮ [n1] 47  created new SQL liveness session 2f05c29f9bce4667bb2fd0361c63dd2e
+I211205 04:43:09.717400 378 kv/kvserver/replica_rangefeed.go:665 ⋮ [n1,rangefeed=‹lease›,s1,r6/1:‹/Table/{SystemCon…-11}›] 48  RangeFeed closed timestamp is empty
+W211205 04:43:09.773905 61 kv/range_lookup.go:243 ⋮ [n1,rangefeed=‹table-stats-cache›,range-lookup=‹/Meta2/Table/20/NULL›] 49  range lookup of key ‹/Meta2/Table/20/NULL› found only non-matching ranges []; retrying
+W211205 04:43:09.780193 60 kv/range_lookup.go:243 ⋮ [n1,rangefeed=‹table-stats-cache›,range-lookup=‹/Table/20›] 50  range lookup of key ‹/Table/20› found only non-matching ranges []; retrying
+I211205 04:43:09.782731 383 util/log/event_log.go:32 ⋮ [n1,intExec=‹optInToDiagnosticsStatReporting›] 51 ={"Timestamp":1638679389750106400,"EventType":"set_cluster_setting","Statement":"SET CLUSTER SETTING \"diagnostics.reporting.enabled\" = true","Tag":"SET CLUSTER SETTING","User":"root","ApplicationName":"$ internal-optInToDiagnosticsStatReporting","SettingName":"diagnostics.reporting.enabled","Value":"‹true›"}
+I211205 04:43:09.809080 456 migration/migrationmanager/manager.go:110 ⋮ [n1,intExec=‹set-setting›,migration-mgr] 52  no need to migrate, cluster already at newest version
+I211205 04:43:09.820931 456 util/log/event_log.go:32 ⋮ [n1,intExec=‹set-setting›] 53 ={"Timestamp":1638679389806038900,"EventType":"set_cluster_setting","Statement":"SET CLUSTER SETTING version = $1","Tag":"SET CLUSTER SETTING","User":"root","ApplicationName":"$ internal-set-setting","PlaceholderValues":["‹'21.2'›"],"SettingName":"version","Value":"‹21.2›"}
+I211205 04:43:09.949686 795 util/log/event_log.go:32 ⋮ [n1,intExec=‹initializeClusterSecret›] 54 ={"Timestamp":1638679389928586700,"EventType":"set_cluster_setting","Statement":"SET CLUSTER SETTING \"cluster.secret\" = gen_random_uuid()::STRING","Tag":"SET CLUSTER SETTING","User":"root","ApplicationName":"$ internal-initializeClusterSecret","SettingName":"cluster.secret","Value":"‹d57e1960-9523-4737-987f-257a69e3f1d1›"}
+I211205 04:43:10.240687 49 server/server_sql.go:1097 ⋮ [n1] 55  done ensuring all necessary startup migrations have run
+I211205 04:43:10.247125 1157 jobs/job_scheduler.go:351 ⋮ [n1] 56  waiting 2m0s before scheduled jobs daemon start
+I211205 04:43:10.258826 1159 server/auto_upgrade.go:55 ⋮ [n1] 57  no need to upgrade, cluster already at the newest version
+I211205 04:43:10.340554 1144 1@util/log/event_log.go:32 ⋮ [intExec=‹set-zone›] 58 ={"Timestamp":1638679390315435700,"EventType":"set_zone_config","Statement":"ALTER RANGE ‹default› CONFIGURE ZONE USING ‹num_replicas› = ‹1›","Tag":"CONFIGURE ZONE","User":"root","ApplicationName":"$ internal-set-zone","Target":"‹RANGE default›","Options":["‹num_replicas = 1›"]}
+I211205 04:43:10.367838 1165 1@util/log/event_log.go:32 ⋮ [intExec=‹set-zone›] 59 ={"Timestamp":1638679390345397100,"EventType":"set_zone_config","Statement":"ALTER DATABASE ‹system› CONFIGURE ZONE USING ‹num_replicas› = ‹1›","Tag":"CONFIGURE ZONE","User":"root","DescriptorID":1,"ApplicationName":"$ internal-set-zone","Target":"‹DATABASE system›","Options":["‹num_replicas = 1›"]}
+I211205 04:43:10.393600 1179 1@util/log/event_log.go:32 ⋮ [intExec=‹set-zone›] 60 ={"Timestamp":1638679390372800000,"EventType":"set_zone_config","Statement":"ALTER RANGE ‹meta› CONFIGURE ZONE USING ‹num_replicas› = ‹1›","Tag":"CONFIGURE ZONE","User":"root","DescriptorID":16,"ApplicationName":"$ internal-set-zone","Target":"‹RANGE meta›","Options":["‹num_replicas = 1›"]}
+I211205 04:43:10.443920 1446 1@util/log/event_log.go:32 ⋮ [intExec=‹set-zone›] 61 ={"Timestamp":1638679390425468700,"EventType":"set_zone_config","Statement":"ALTER RANGE ‹system› CONFIGURE ZONE USING ‹num_replicas› = ‹1›","Tag":"CONFIGURE ZONE","User":"root","DescriptorID":17,"ApplicationName":"$ internal-set-zone","Target":"‹RANGE system›","Options":["‹num_replicas = 1›"]}
+I211205 04:43:10.559976 1460 1@util/log/event_log.go:32 ⋮ [intExec=‹set-zone›] 62 ={"Timestamp":1638679390447620500,"EventType":"set_zone_config","Statement":"ALTER RANGE ‹liveness› CONFIGURE ZONE USING ‹num_replicas› = ‹1›","Tag":"CONFIGURE ZONE","User":"root","DescriptorID":22,"ApplicationName":"$ internal-set-zone","Target":"‹RANGE liveness›","Options":["‹num_replicas = 1›"]}
+I211205 04:43:10.634601 1481 1@util/log/event_log.go:32 ⋮ [intExec=‹set-zone›] 63 ={"Timestamp":1638679390566290900,"EventType":"set_zone_config","Statement":"ALTER TABLE ‹system›.public.‹replication_constraint_stats› CONFIGURE ZONE USING ‹num_replicas› = ‹1›","Tag":"CONFIGURE ZONE","User":"root","DescriptorID":25,"ApplicationName":"$ internal-set-zone","Target":"‹TABLE system.public.replication_constraint_stats›","Options":["‹num_replicas = 1›"]}
+I211205 04:43:10.721422 1545 1@util/log/event_log.go:32 ⋮ [intExec=‹set-zone›] 64 ={"Timestamp":1638679390642900300,"EventType":"set_zone_config","Statement":"ALTER TABLE ‹system›.public.‹replication_stats› CONFIGURE ZONE USING ‹num_replicas› = ‹1›","Tag":"CONFIGURE ZONE","User":"root","DescriptorID":27,"ApplicationName":"$ internal-set-zone","Target":"‹TABLE system.public.replication_stats›","Options":["‹num_replicas = 1›"]}
+I211205 04:43:10.809302 1876 1@util/log/event_log.go:32 ⋮ [intExec=‹set-zone›] 65 ={"Timestamp":1638679390789909300,"EventType":"set_zone_config","Statement":"ALTER TABLE ‹system›.public.‹tenant_usage› CONFIGURE ZONE USING ‹num_replicas› = ‹1›","Tag":"CONFIGURE ZONE","User":"root","DescriptorID":45,"ApplicationName":"$ internal-set-zone","Target":"‹TABLE system.public.tenant_usage›","Options":["‹num_replicas = 1›"]}
+I211205 04:43:10.830522 49 1@cli/initial_sql.go:49 ⋮ [-] 66  Replication was disabled for this cluster.
+I211205 04:43:10.830522 49 1@cli/initial_sql.go:49 ⋮ [-] 66 +When/if adding nodes in the future, update zone configurations to increase the replication factor.
+I211205 04:43:10.838782 49 1@server/server.go:2338 ⋮ [n1] 67  serving sql connections
+I211205 04:43:10.846968 49 1@cli/start.go:749 ⋮ [config] 68  clusterID: ‹0353968e-0f67-4a9c-80b1-2a4cd30efaa1›
+I211205 04:43:10.849316 49 1@cli/start.go:749 ⋮ [config] 69  nodeID: n1
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70  node startup completed:
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +CockroachDB node starting at 2021-12-05 04:43:10.8444864 +0000 UTC (took 17.9s)
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +build:               CCL v21.2.2 @ 2021/12/01 14:41:47 (go1.16.6)
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +webui:               ‹http://Mantop:8080›
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +sql:                 ‹postgresql://root@Mantop:26257/defaultdb?sslmode=disable›
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +sql (JDBC):          ‹jdbc:postgresql://Mantop:26257/defaultdb?sslmode=disable&user=root›
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +RPC client flags:    ‹C:\Program Files\cockroach-v21.2.2.windows-6.2-amd64\cockroach.exe <client cmd> --host=Mantop:26257 --insecure›
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +logs:                ‹C:\Users\Admin\Downloads\Telegram Desktop\music\cockroach-data\logs›
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +temp dir:            ‹C:\Users\Admin\Downloads\Telegram Desktop\music\cockroach-data\cockroach-temp255344347›
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +external I/O path:   ‹C:\Users\Admin\Downloads\Telegram Desktop\music\cockroach-data\extern›
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +store[0]:            ‹path=C:\Users\Admin\Downloads\Telegram Desktop\music\cockroach-data›
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +storage engine:      pebble
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +status:              initialized new cluster
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +clusterID:           ‹0353968e-0f67-4a9c-80b1-2a4cd30efaa1›
+I211205 04:43:10.865890 49 1@cli/start.go:759 ⋮ [-] 70 +nodeID:              1
+I211205 04:43:11.158588 153 1@gossip/gossip.go:1500 ⋮ [n1] 71  node has connected to cluster via gossip
+I211205 04:43:11.167707 153 kv/kvserver/stores.go:269 ⋮ [n1] 72  wrote 0 node addresses to persistent storage
+W211205 04:43:19.494682 141 1@server/status/runtime.go:460 ⋮ [n1] 73  unable to get file descriptor usage (will not try again): ‹not implemented on windows›
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74  
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +__level_____count____size___score______in__ingest(sz_cnt)____move(sz_cnt)___write(sz_cnt)____read___r-amp___w-amp
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +    WAL         3   974 K       -   967 K       -       -       -       -   974 K       -       -       -     1.0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +      0         0     0 B    0.00     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +      1         0     0 B    0.00     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +      2         0     0 B    0.00     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +      3         0     0 B    0.00     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +      4         0     0 B    0.00     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +      5         0     0 B    0.00     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +      6         0     0 B       -     0 B     0 B       0     0 B       0     0 B       0     0 B       0     0.0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +  total         0     0 B       -   974 K     0 B       0     0 B       0   974 K       0     0 B       0     1.0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +  flush         0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +compact         0     0 B             0 B          (size == estimated-debt, in = in-progress-bytes)
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +  ctype         0       0       0       0       0  (default, delete, elision, move, read)
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 + memtbl         3   1.8 M
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +zmemtbl         0     0 B
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 +   ztbl         0     0 B
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 + bcache         0     0 B    0.0%  (score == hit-rate)
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 + tcache         0     0 B    0.0%  (score == hit-rate)
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 + titers         0
+I211205 04:43:29.476197 128 kv/kvserver/store.go:2693 ⋮ [n1,s1] 74 + filter         -       -    0.0%  (score == utility)
+I211205 04:43:35.693198 2529 kv/kvserver/replica_consistency.go:254 ⋮ [n1,consistencyChecker,s1,r4/1:‹/System{/tsd-tse}›] 75  triggering stats recomputation to resolve delta of {ContainsEstimates:6976 LastUpdateNanos:1638679410317268700 IntentAge:0 GCBytesAge:0 LiveBytes:-21639 LiveCount:-1165 KeyBytes:-61074 KeyCount:-1165 ValBytes:39435 ValCount:-1165 IntentBytes:0 IntentCount:0 SeparatedIntentCount:0 SysBytes:0 SysCount:0 AbortSpanBytes:0}
+I211205 04:44:44.846257 1 1@cli/start.go:810 ⋮ [-] 76  received signal 'interrupt'
+I211205 04:44:44.847276 1 1@cli/start.go:894 ⋮ [-] 77  initiating graceful shutdown of server
+I211205 04:44:44.969850 3507 1@server/drain.go:157 ⋮ [server drain process] 78  drain remaining: 17
+I211205 04:44:44.972167 3507 1@server/drain.go:159 ⋮ [server drain process] 79  drain details: descriptor leases: 16, liveness record: 1
+I211205 04:44:45.192497 3507 1@server/drain.go:157 ⋮ [server drain process] 80  drain remaining: 0
+W211205 04:44:45.193924 409 jobs/registry.go:842 ⋮ [-] 81  canceling all adopted jobs due to stopper quiescing
+W211205 04:44:45.195005 233 sql/sqlliveness/slinstance/slinstance.go:220 ⋮ [n1] 82  exiting heartbeat loop
+I211205 04:44:45.241902 1 1@cli/start.go:946 ⋮ [-] 83  server drained and shutdown completed
+I211205 04:44:45.246173 1 1@cli/clierror/check.go:35 ⋮ [-] 84  interrupted

@@ -1,0 +1,19 @@
+I211205 04:43:07.166363 49 util/log/file_sync_buffer.go:238 ⋮ [config]   file created at: 2021/12/05 04:43:07
+I211205 04:43:07.166410 49 util/log/file_sync_buffer.go:238 ⋮ [config]   running on machine: ‹Mantop›
+I211205 04:43:07.166437 49 util/log/file_sync_buffer.go:238 ⋮ [config]   binary: CockroachDB CCL v21.2.2 (x86_64-w64-mingw32, built 2021/12/01 14:41:47, go1.16.6)
+I211205 04:43:07.166455 49 util/log/file_sync_buffer.go:238 ⋮ [config]   arguments: [‹C:\Program Files\cockroach-v21.2.2.windows-6.2-amd64\cockroach.exe› ‹start-single-node› ‹--insecure› ‹--logtostderr›]
+I211205 04:43:07.166487 49 util/log/file_sync_buffer.go:238 ⋮ [config]   log format (utf8=✓): crdb-v2
+I211205 04:43:07.166503 49 util/log/file_sync_buffer.go:238 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+I211205 04:43:07.124241 49 3@vendor/github.com/cockroachdb/pebble/event.go:611 ⋮ [n?,pebble,s?] 1  [JOB 1] MANIFEST created 000001
+I211205 04:43:07.407525 49 3@vendor/github.com/cockroachdb/pebble/event.go:635 ⋮ [n?,pebble,s?] 2  [JOB 1] WAL created 000002
+I211205 04:43:07.547543 70 3@vendor/github.com/cockroachdb/pebble/event.go:631 ⋮ [n?,pebble,s?] 3  [JOB 2] all initial table stats loaded
+I211205 04:43:08.456578 49 3@vendor/github.com/cockroachdb/pebble/event.go:611 ⋮ [n?,pebble,s?] 4  [JOB 1] MANIFEST created 000001
+I211205 04:43:08.668256 49 3@vendor/github.com/cockroachdb/pebble/event.go:635 ⋮ [n?,pebble,s?] 5  [JOB 1] WAL created 000002
+I211205 04:43:08.879806 94 3@vendor/github.com/cockroachdb/pebble/event.go:631 ⋮ [n?,pebble,s‹temp›] 6  [JOB 2] all initial table stats loaded
+I211205 04:43:09.076041 49 3@vendor/github.com/cockroachdb/pebble/event.go:607 ⋮ [n?,pebble,s?] 7  upgraded to format version: ‹002›
+I211205 04:43:09.110773 49 3@vendor/github.com/cockroachdb/pebble/event.go:607 ⋮ [n?,pebble,s?] 8  upgraded to format version: ‹003›
+I211205 04:43:09.127108 49 3@vendor/github.com/cockroachdb/pebble/event.go:607 ⋮ [n?,pebble,s?] 9  upgraded to format version: ‹004›
+I211205 04:43:10.069611 168 3@vendor/github.com/cockroachdb/pebble/event.go:635 ⋮ [n1,pebble,s1] 10  [JOB 3] WAL created 000004
+I211205 04:43:19.605765 182 3@vendor/github.com/cockroachdb/pebble/event.go:635 ⋮ [n1,pebble,s1] 11  [JOB 4] WAL created 000005
+I211205 04:43:40.323253 166 3@vendor/github.com/cockroachdb/pebble/event.go:635 ⋮ [n1,pebble,s1] 12  [JOB 5] WAL created 000006
+I211205 04:44:20.326890 180 3@vendor/github.com/cockroachdb/pebble/event.go:635 ⋮ [n1,pebble,s1] 13  [JOB 6] WAL created 000007
