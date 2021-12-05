@@ -15,7 +15,7 @@ Debug Thugs
 ## Database used
 
 <p align="center">
-  <img src='docs/media/cockroach_db.png?raw=true' width='40%'>
+  <img src='https://raw.githubusercontent.com/cockroachdb/cockroach/master/docs/media/cockroach_db.png' width='40%'>
 </p>
 
 ---
